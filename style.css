@@ -1,0 +1,294 @@
+/* ==========================================================
+   MODERN EMERALD DARK THEME (GitHub Pro Aesthetic)
+   ================================================---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #050d0a 0%, #0a1f16 100%);
+  color: #d1d5db;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* GitHub Navbar Header */
+.github-header {
+  background: rgba(10, 26, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(46, 160, 67, 0.25);
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f3f4f6;
+  font-size: 1.1rem;
+}
+
+.brand i {
+  color: #3fb950;
+}
+
+.repo-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  background: rgba(46, 160, 67, 0.1);
+  border: 1px solid rgba(46, 160, 67, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  color: #3fb950;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge.public {
+  background: rgba(56, 139, 253, 0.1);
+  border-color: rgba(56, 139, 253, 0.3);
+  color: #58a6ff;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Kartu Profil Repository */
+.repo-info-card {
+  background: linear-gradient(145deg, #0d2218, #07150f);
+  border: 1px solid rgba(46, 160, 67, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.avatar-glow {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(45deg, #238636, #3fb950, #56d364);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(63, 185, 80, 0.4);
+}
+
+.avatar {
+  background: #0b1a12;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #3fb950;
+}
+
+.author-text h1 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.author-text .sub-text {
+  color: #8b949e;
+  font-weight: 400;
+}
+
+.author-text p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.meta-tag {
+  color: #3fb950 !important;
+  font-weight: 500;
+  margin-top: 6px !important;
+}
+
+/* Kotak Modul GitHub Box */
+.github-box {
+  background: rgba(11, 26, 18, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(46, 160, 67, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.github-box:hover {
+  border-color: rgba(46, 160, 67, 0.5);
+  box-shadow: 0 6px 30px rgba(46, 160, 67, 0.15);
+}
+
+.box-header {
+  background: rgba(16, 37, 26, 0.9);
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(46, 160, 67, 0.2);
+  font-weight: 600;
+  color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.accent-icon {
+  color: #3fb950;
+}
+
+.box-body {
+  padding: 20px;
+}
+
+/* Styled Lists */
+.styled-list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.styled-list li {
+  color: #d1d5db;
+}
+
+.styled-list code {
+  color: #56d364;
+  background: rgba(56, 211, 83, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+}
+
+/* Code Editor Window Style */
+.code-container {
+  background: #040a07;
+  border: 1px solid rgba(46, 160, 67, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.code-titlebar {
+  background: #081610;
+  padding: 8px 14px;
+  border-bottom: 1px solid rgba(46, 160, 67, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #8b949e;
+  font-family: ui-monospace, monospace;
+}
+
+.code-titlebar i {
+  color: #3fb950;
+}
+
+.code-container pre {
+  padding: 16px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9rem;
+  color: #e6edf3;
+}
+
+/* Info Banner & Description */
+.info-banner {
+  background: rgba(35, 134, 54, 0.12);
+  border-left: 4px solid #3fb950;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.info-banner i {
+  color: #3fb950;
+  font-size: 1.2rem;
+}
+
+.instruction-desc {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Evaluation Card */
+.evaluation-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(16, 37, 26, 0.6);
+  border: 1px solid rgba(46, 160, 67, 0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.check-icon {
+  font-size: 2.2rem;
+  color: #3fb950;
+}
+
+.evaluation-card h3 {
+  color: #f3f4f6;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.evaluation-card p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+/* Footer */
+.github-footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  border-top: 1px solid rgba(46, 160, 67, 0.15);
+  padding-top: 20px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sabiq/lkpd-javascript-string-number</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Tema Hijau Dark -->
+  <header class="github-header">
+    <div class="header-content">
+      <div class="brand">
+        <i class="fa-brands fa-github fa-2x"></i>
+        <span>LKPD JavaScript - String, Number, dan Konversi Data</span>
+      </div>
+      <div class="repo-badge">
+        <span class="badge">Public</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Informasi Identitas Siswa -->
+  <main class="container">
+    <section class="repo-info-card">
+      <div class="author-details">
+        <div class="avatar">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <div class="author-text">
+          <h1>Sabiq <span class="sub-text">/ lkpd-javascript-string-number</span></h1>
+          <p><i class="fa-solid fa-school"></i> <strong>Satuan Pendidikan:</strong> SMKN 1 GARUT[cite: 7]</p>
+          <p><i class="fa-solid fa-book-open"></i> <strong>Mata Pelajaran:</strong> Dasar-Dasar Pengembangan Perangkat Lunak dan Gim[cite: 7]</p>
+          <p><i class="fa-solid fa-id-card"></i> <strong>Nama:</strong> Sabiq | <strong>Kelas:</strong> X PPLG 1 | <strong>Alokasi Waktu:</strong> 2 x 45 Menit[cite: 7]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tujuan Pembelajaran -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-bullseye"></i> A. TUJUAN PEMBELAJARAN[cite: 7]</div>
+      <div class="box-body">
+        <ul>
+          <li>Membedakan String dan Number[cite: 7].</li>
+          <li>Menjelaskan bahwa <code>prompt()</code> menghasilkan String[cite: 7].</li>
+          <li>Menggunakan <code>Number()</code> dan <code>String()</code>[cite: 7].</li>
+          <li>Menganalisis kesalahan akibat tipe data[cite: 7].</li>
+          <li>Membuat program input dan perhitungan sederhana[cite: 7].</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Aktivitas 1 -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-vial"></i> C. AKTIVITAS 1: EKSPERIMEN 10 + 20[cite: 7]</div>
+      <div class="box-body">
+        <div class="code-block">
+          <pre><code>let a = "10";
+let b = "20";
+console.log(a + b);</code></pre>
+        </div>
+        <p class="instruction-note"><i class="fa-solid fa-circle-info"></i> Periksa Browser Console (F12) untuk melihat hasil prediksi dan uji kode Aktivitas 1.</p>
+      </div>
+    </section>
+
+    <!-- Aktivitas 2 -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-magnifying-glass"></i> D. AKTIVITAS 2: MENEMUKAN TIPE DATA[cite: 7]</div>
+      <div class="box-body">
+        <div class="code-block">
+          <pre><code>let nama = "Asep";
+let umur = 16;
+console.log(typeof nama);
+console.log(typeof umur);</code></pre>
+        </div>
+        <p class="instruction-note"><i class="fa-solid fa-circle-info"></i> Hasil analisis variabel dan tipe data dicetak melalui konsol.</p>
+      </div>
+    </section>
+
+    <!-- Aktivitas 3 -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-code"></i> E. AKTIVITAS 3: KONVERSI STRING MENJADI NUMBER[cite: 8]</div>
+      <div class="box-body">
+        <div class="code-block">
+          <pre><code>let a = "10";
+let b = "20";
+let hasil = Number(a) + Number(b);
+console.log(hasil);</code></pre>
+        </div>
+        <p class="instruction-note"><i class="fa-solid fa-circle-info"></i> Hasil konversi program ke console telah dijalankan di background script.</p>
+      </div>
+    </section>
+
+    <!-- Aktivitas 4 -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-calculator"></i> F. AKTIVITAS 4 - PROGRAM KASIR SEDERHANA[cite: 8]</div>
+      <div class="box-body">
+        <div class="code-block">
+          <pre><code>let harga = Number(prompt("Masukkan harga: "));
+let jumlah = Number(prompt("Masukkan jumlah: "));
+let total = harga * jumlah;
+console.log("Total belanja = " + total);</code></pre>
+        </div>
+        <p class="instruction-note"><i class="fa-solid fa-circle-info"></i> Program simulasi kasir otomatis berjalan dan mencetak log ke console.</p>
+      </div>
+    </section>
+
+    <!-- Tantangan -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-trophy"></i> G. TANTANGAN - PROGRAM HITUNG NILAI[cite: 8]</div>
+      <div class="box-body">
+        <div class="code-block">
+          <pre><code>// Algoritma & Perhitungan Rata-Rata (Tugas, UTS, UAS)
+let tugas = 85, uts = 80, uas = 90;
+let rataRata = (tugas + uts + uas) / 3;
+console.log("Nilai Rata-rata: " + rataRata);</code></pre>
+        </div>
+        <p class="instruction-note"><i class="fa-solid fa-circle-info"></i> Logika algoritma dan hasil kalkulasi nilai tercatat pada console.</p>
+      </div>
+    </section>
+
+    <!-- Think Pair Share, Refleksi, Penilaian Diri -->
+    <section class="github-box">
+      <div class="box-header"><i class="fa-solid fa-list-check"></i> H, I, J. THINK PAIR SHARE, REFLEKSI & PENILAIAN DIRI[cite: 9]</div>
+      <div class="box-body">
+        <p>Seluruh jawaban diskusi kelompok (Think Pair Share), Refleksi 3-2-1, serta checklist Penilaian Diri telah dimuat dan direkap secara otomatis ke dalam sistem <strong>Console Log</strong>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="github-footer">
+    <p>&copy; 2026 Sabiq - X PPLG 1 | SMKN 1 Garut - LKPD JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
